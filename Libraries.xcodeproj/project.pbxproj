@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		8D6D0A201E2EB65700E8A5D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D0A1F1E2EB65700E8A5D1 /* main.m */; };
 		8D6D0A231E2EB65700E8A5D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D0A221E2EB65700E8A5D1 /* AppDelegate.m */; };
-		8D6D0A261E2EB65700E8A5D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D0A251E2EB65700E8A5D1 /* ViewController.m */; };
 		8D6D0A291E2EB65700E8A5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6D0A271E2EB65700E8A5D1 /* Main.storyboard */; };
 		8D6D0A2B1E2EB65700E8A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6D0A2A1E2EB65700E8A5D1 /* Assets.xcassets */; };
 		8D6D0A2E1E2EB65700E8A5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6D0A2C1E2EB65700E8A5D1 /* LaunchScreen.storyboard */; };
+		8D6D0A3C1E2EB79D00E8A5D1 /* DMNLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D0A3B1E2EB79D00E8A5D1 /* DMNLibrary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		8D6D0A1F1E2EB65700E8A5D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D6D0A211E2EB65700E8A5D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D6D0A221E2EB65700E8A5D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8D6D0A241E2EB65700E8A5D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8D6D0A251E2EB65700E8A5D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8D6D0A281E2EB65700E8A5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D6D0A2A1E2EB65700E8A5D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D6D0A2D1E2EB65700E8A5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D6D0A2F1E2EB65700E8A5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D6D0A3A1E2EB79D00E8A5D1 /* DMNLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNLibrary.h; sourceTree = "<group>"; };
+		8D6D0A3B1E2EB79D00E8A5D1 /* DMNLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +60,11 @@
 			children = (
 				8D6D0A211E2EB65700E8A5D1 /* AppDelegate.h */,
 				8D6D0A221E2EB65700E8A5D1 /* AppDelegate.m */,
-				8D6D0A241E2EB65700E8A5D1 /* ViewController.h */,
-				8D6D0A251E2EB65700E8A5D1 /* ViewController.m */,
-				8D6D0A271E2EB65700E8A5D1 /* Main.storyboard */,
-				8D6D0A2A1E2EB65700E8A5D1 /* Assets.xcassets */,
-				8D6D0A2C1E2EB65700E8A5D1 /* LaunchScreen.storyboard */,
-				8D6D0A2F1E2EB65700E8A5D1 /* Info.plist */,
+				8D6D0A391E2EB6F900E8A5D1 /* Network Controller */,
+				8D6D0A361E2EB6D400E8A5D1 /* Model */,
+				8D6D0A371E2EB6E700E8A5D1 /* Model Controller */,
+				8D6D0A381E2EB6EE00E8A5D1 /* View Controller */,
+				8D6D0A351E2EB6B700E8A5D1 /* View */,
 				8D6D0A1E1E2EB65700E8A5D1 /* Supporting Files */,
 			);
 			path = Libraries;
@@ -74,9 +73,54 @@
 		8D6D0A1E1E2EB65700E8A5D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D6D0A2A1E2EB65700E8A5D1 /* Assets.xcassets */,
+				8D6D0A2C1E2EB65700E8A5D1 /* LaunchScreen.storyboard */,
+				8D6D0A2F1E2EB65700E8A5D1 /* Info.plist */,
 				8D6D0A1F1E2EB65700E8A5D1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D6D0A351E2EB6B700E8A5D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D6D0A271E2EB65700E8A5D1 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8D6D0A361E2EB6D400E8A5D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D6D0A3A1E2EB79D00E8A5D1 /* DMNLibrary.h */,
+				8D6D0A3B1E2EB79D00E8A5D1 /* DMNLibrary.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8D6D0A371E2EB6E700E8A5D1 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model Controller";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8D6D0A381E2EB6EE00E8A5D1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controller";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8D6D0A391E2EB6F900E8A5D1 /* Network Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Network Controller";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D6D0A261E2EB65700E8A5D1 /* ViewController.m in Sources */,
+				8D6D0A3C1E2EB79D00E8A5D1 /* DMNLibrary.m in Sources */,
 				8D6D0A231E2EB65700E8A5D1 /* AppDelegate.m in Sources */,
 				8D6D0A201E2EB65700E8A5D1 /* main.m in Sources */,
 			);
